@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="notice_board">
+    <h1>Notice Board</h1>
+    <div class="paragraph">
+    <p>Welcome to the notice board. Here you'll find the latest updates and announcements of the College.</p>
+    </div>
+        <div class="main_notice">
+        <h2>Upcoming Events</h2>
+        <div id="event_table">
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Science Fair</td>
+                <td>March 15, 2024</td>
+            </tr>
+            <tr>
+                <td>Art Exhibition</td>
+                <td>April 10, 2024</td>
+            </tr>
+            <tr>
+                <td>Sports Day</td>
+                <td>May 5, 2024</td>
+            </tr>
+        </table>
+        </div>
+        <hr>
+        <div class="holidays">
+            <h2>Holidays</h2>
+        <div id="holiday_list"> 
+        <ul>
+            <li>Spring Break - March 25 to March 29, 2024</li>
+            <li>Memorial Day - May 27, 2024</li>
+            <li>Independence Day - July 4, 2024</li>
+        </div>
+    </div>
+</div>
+</body>
+<style>
+    body{
+        background-color: #d2eaff;
+        font-family: Arial, sans-serif;
+                display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+    }
+    #notice_board{
+        justify-content: center;
+        font-size: x-large;
+        height: fit-content;
+        width: 50%;
+        padding: 20px;
+        border-left: 50vw;
+        text-align: center;
+        background-color: lightcoral;
+        border: 2px solid black;
+        border-radius: 30px;
+    }
+    .main_notice{
+        text-align: center;
+        background-color: lightgrey;
+        padding: 15px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    #event_table{
+        align-items: center ;
+        text-align: center;
+        margin-top: large;
+    }
+    #holiday_list{
+        text-align: left;
+        margin-top: large;
+    }
+    hr{
+        border: 2px solid black;
+        }
+    </style>
+</html>
