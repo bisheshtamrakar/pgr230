@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>week 1 assignment</title>
-        <style>
-        table{
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th, td{
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        tr:hover{
-            background-color: lightgrey;
-            border-collapse: collapse;
-        }
-        </style>
+    <link rel="stylesheet" href="style.css">    
 </head>
-<body style="background-color: rgb(215, 241, 215);">
+<body>
     <!-- div is a container  -->
-    <div> 
+    <div id="header">
+        <div class="head">  <!-- the # is used to identify a specific element -->
         <h1>Beauty company</h1>
         <p><i>Beauty company is a <b>best beauty</b> products</i></p> <!-- the b is used to make text bold -->
-        <a href="/home">Home</a>
+        </div>
+        <div id ="navbar">  <!-- the id is used to identify a specific element -->
+            <div class="nav_items">
+                <a href="/home">Home</a>
+            </div>
+            <div class="nav_items">
         <a href="/contact">Contact Us</a>
-        <a href="/about">About Us</a>
-        <a href="/products">Our products</a>
+        </div>
+        <div class="nav_items">
+
+            <a href="/about">About Us</a>
+        </div>
+        <div class="nav_items">
+
+            <a href="/products">Our products</a>
+        </div>
     </div>
+    </div>  
     <hr> <!-- the hr tag is used to break a line with a horizontal line -->
     <div>
         <h2>Welcome to Beauty Company</h2>
@@ -52,6 +52,7 @@
         </ul>
     </div>
         <div>
+        <div class="product-images">
         <a href="foudation.html">
         <img alt="product 1" src="https://colorpluscosmetics.com/wp-content/uploads/2023/06/ColorPlus-Cosmetics-LA-Girl-Pro-Coverage-Foundation-GLM642-Fair-1-scaled-300x300.jpg" height="150px" width="150px">
         </a>
@@ -67,13 +68,15 @@
         <a href="blush.html">
         <img alt="product 5" src="https://www.narscosmetics.com/on/demandware.static/-/Sites-itemmaster_NARS/default/dw4ceb3107/2025/December/Blush/Soldiers/NARS_SP26_DeeplyBloomingCollection_PDPCrop_Blush_SoldierSwatch_NeverEnough_GLBL.jpg    " height="150px" width="150px">
         </a>
+        </div>
         <p>We provide best quality beauty products.</p>
         </div>
         <button>Shop Now</button>
         <button>Contact Us</button>
     </div>
     <hr>
-    <div>   
+    <div class="discount-table">
+        <h2>Discounts on Products</h2>
       <table style="width:50%">
         <tr>
             <th>Product</th>
@@ -106,8 +109,8 @@
       </div>
     </div>
 <hr>
-  <div class="footer-bottom" style="background-color: lightslategray;">
-    <p>copyrights 2026 Beauty Company. All rights reserved.</p>
+  <div class="footer-bottom">
+    <p>Copyrights 2026 Beauty Company. All rights reserved.</p>
     <p class="payments">Visa · MasterCard · PayPal · eSewa · Khalti</p>
   </div>
 </body>

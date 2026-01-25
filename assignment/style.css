@@ -1,0 +1,53 @@
+body {
+    background-color: #f0ffb8;
+    font-family: Arial, sans-serif;
+}
+
+.discount-table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.discount-table th,
+.discount-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.discount-table tr:hover {
+    background-color: lightgrey;
+}
+#header {
+    background-color: #ffebcc;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+#navbar {
+    height: 20px;
+    width: 500px;
+    background-color: #ffccff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-left: 700px;
+    border-radius: 30px;
+}
+.nav_items{
+    font-size: medium;
+    color: black;
+    width: 150px
+}
+.product-images {
+    display: inline-block;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.footer-container {
+    background-color: #ffebcc;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
