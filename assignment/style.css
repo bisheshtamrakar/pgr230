@@ -1,61 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #f0ffb8;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(180deg, #f9fbe7, #ffffff);
+    color: #333;
+    line-height: 1.6;
 }
 
-.discount-table {
-    border-collapse: collapse;
-    width: 50%;
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
 }
 
-.discount-table th,
-.discount-table td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+.col-3 {
+    grid-column: span 3;
 }
 
-.discount-table tr:hover {
-    background-color: lightgrey;
+.col-6 {
+    grid-column: span 6;
 }
-#header {
-    background-color: #ffebcc;
-    padding: 10px;
+
+.col-12 {
+    grid-column: span 12;
+}
+
+.header {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    padding: 0px 0px 20px 0px;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.head h1 {
+    font-size: 32px;
+    color: #1b5e20;
+}
+
+.head p {
     text-align: center;
-    display: flex;
+    color: #2e7d32;
 }
-#navbar {
-    height: 20px;
-    width: 500px;
+
+.search {
+    text-align: right;
+}
+
+.search input {
+    padding: 10px 16px;
+    width: 65%;
+    border-radius: 25px;
+    border: 1px solid #c8e6c9;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search navbar {
+    /* width: 65%; */
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    margin-left: 700px;
-    border-radius: 30px;
+    border-bottom: 1px solid #e0e0e0;
 }
-@media screen and (max-width: 480px) {
-    #navbar {
-        height: fit-content;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-left: 0;
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2e7d32;
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #2e7d32;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease;
+}
+
+.search input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1b5e20;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: #2e7d32;
+}
+
+.product-section {
+    padding: 40px 80px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #1b5e20;
+}
+
+.product-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card p {
+    font-weight: 600;
+    color: #2e7d32;
+}
+
+.footer {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #1b5e20;
+}
+
+@media (max-width: 992px) {
+    .col-3 {
+        grid-column: span 6;
+    }
+
+    .container,
+    .product-section {
+        padding: 40px;
+    }
+
+    .search input {
+        width: 80%;
     }
 }
-.nav_items{
-        color: black;
-    font-size: medium;
-    width: 150px
-}
-.product-images {
-    display: inline-block;
-    padding-left: 50px;
-    margin-top: 20px;
-}
-.footer-container {
-    background-color: #ffebcc;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
+
+
+@media (max-width: 576px) {
+
+    .col-3,
+    .col-6 {
+        grid-column: span 12;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .search {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .container,
+    .product-section {
+        padding: 25px;
+    }
 }

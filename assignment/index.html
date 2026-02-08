@@ -1,115 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>week 1 assignment</title>
-    <link rel="stylesheet" href="style.css">    
+    <title>Beauty Company</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- div is a container  -->
-    <div id="header">
-        <div class="head">  <!-- the # is used to identify a specific element -->
-        <h1>Beauty company</h1>
-        <p><i>Beauty company is a <b>best beauty</b> products</i></p> <!-- the b is used to make text bold -->
+
+    <header class="header grid-12">
+        <div class="head col-6">
+            <h1 style="margin: 20px ;">Beauty company</h1>
+            <p><i>Beauty company is a <b>best beauty</b> products</i></p>
         </div>
-        <div id ="navbar">  <!-- the id is used to identify a specific element -->
-            <div class="nav_items">
-                <a href="/home">Home</a>
-            </div>
-            <div class="nav_items">
-        <a href="/contact">Contact Us</a>
+
+        <div class="search col-6">
+            <input type="text" placeholder="Search products">
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">Contact Us</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Products</a>
+            </nav>
         </div>
-        <div class="nav_items">
-            <a href="/about">About Us</a>
-        </div>
-        <div class="nav_items">
-            <a href="/products">Our products</a>
-        </div>
-    </div>
-    </div>  
-    <hr> <!-- the hr tag is used to break a line with a horizontal line -->
-    <div>
-        <h2>Welcome to Beauty Company</h2>
-        <p>At Beauty Company, we believe that beauty is more than skin deep. Our mission is to empower individuals to express their unique beauty through high-quality products and exceptional customer service. Whether you're looking for the latest makeup trends or timeless skincare essentials, we've got you covered. Explore our wide range of products and discover the perfect items to enhance your natural beauty.</p>
-    </div>
+    </header>
+
+
     <hr>
-    <div>
-        <h1>20% off on every product!!!</h1>
-    </div>  
+
+    <h1 style="text-align:center;">20% off on every product!!!</h1>
+
     <hr>
-    <div> 
-        <div>
+
+    <section class="product-section">
         <h2>Our Products</h2>
-        <ul>
-            <li>Foundation</li>
-            <li>Lipstick</li>
-            <li>Eyeliner</li>
-            <li>Mascara</li>
-            <li>Blush</li>
-        </ul>
-    </div>
-        <div>
-        <div class="product-images">
-        <a href="foudation.html">
-        <img alt="product 1" src="https://colorpluscosmetics.com/wp-content/uploads/2023/06/ColorPlus-Cosmetics-LA-Girl-Pro-Coverage-Foundation-GLM642-Fair-1-scaled-300x300.jpg" height="150px" width="150px">
-        </a>
-        <a href="lipstick.html">
-        <img alt="product 2" src="https://sdcdn.io/mac/us/mac_sku_M0N904_1x1_0.png?width=1440&height=1440" height="150px" width="150px">
-        </a>
-        <a href="eyeliner.html">
-        <img alt="product 3" src="https://img.drz.lazcdn.com/static/np/p/315b6e818ebe0a0e45c3ede9861cc2fe.jpg_720x720q80.jpg" height="150px" width="150px">
-        </a>
-        <a href="mascara.html">
-        <img alt="product 4" src="https://img.drz.lazcdn.com/static/np/p/6d47027e90ec8f5088c98415cbea7e18.jpg_720x720q80.jpg" height="150px" width="150px">
-        </a>
-        <a href="blush.html">
-        <img alt="product 5" src="https://www.narscosmetics.com/on/demandware.static/-/Sites-itemmaster_NARS/default/dw4ceb3107/2025/December/Blush/Soldiers/NARS_SP26_DeeplyBloomingCollection_PDPCrop_Blush_SoldierSwatch_NeverEnough_GLBL.jpg    " height="150px" width="150px">
-        </a>
+
+        <div class="product-grid grid-12">
+            <div class="product-card col-3">
+                <a href="foundation.html">
+                    <img src="https://colorpluscosmetics.com/wp-content/uploads/2023/06/ColorPlus-Cosmetics-LA-Girl-Pro-Coverage-Foundation-GLM642-Fair-1-scaled-300x300.jpg"
+                        alt="Foundation">
+                </a>
+                <p>Foundation</p>
+            </div>
+
+            <div class="product-card col-3">
+                <a href="lipstick.html">
+                    <img src="https://sdcdn.io/mac/us/mac_sku_M0N904_1x1_0.png?width=1440&height=1440" alt="Lipstick">
+                </a>
+                <p>Lipstick</p>
+            </div>
+
+            <div class="product-card col-3">
+                <a href="eyeliner.html">
+                    <img src="https://img.drz.lazcdn.com/static/np/p/315b6e818ebe0a0e45c3ede9861cc2fe.jpg_720x720q80.jpg"
+                        alt="Eyeliner">
+                </a>
+                <p>Eyeliner</p>
+            </div>
+
+            <div class="product-card col-3">
+                <a href="mascara.html">
+                    <img src="https://img.drz.lazcdn.com/static/np/p/6d47027e90ec8f5088c98415cbea7e18.jpg_720x720q80.jpg"
+                        alt="Mascara">
+                </a>
+                <p>Mascara</p>
+            </div>
+
+            <div class="product-card col-3">
+                <a href="blush.html">
+                    <img src="https://www.narscosmetics.com/on/demandware.static/-/Sites-itemmaster_NARS/default/dw4ceb3107/2025/December/Blush/Soldiers/NARS_SP26_DeeplyBloomingCollection_PDPCrop_Blush_SoldierSwatch_NeverEnough_GLBL.jpg"
+                        alt="Blush">
+                </a>
+                <p>Blush</p>
+            </div>
         </div>
-        <p>We provide best quality beauty products.</p>
-        </div>
-        <button>Shop Now</button>
-        <button>Contact Us</button>
-    </div>
+    </section>
     <hr>
-    <div class="discount-table">
-        <h2>Discounts on Products</h2>
-      <table style="width:50%">
-        <tr>
-            <th>Product</th>
-            <th>Discount</th>
-        </tr>
-        <tr>
-            <td>Foundation</td>
-            <td>20%</td>
-        </tr>
-        <tr>
-            <td>Lipstick</td>
-            <td>15%</td>
-        </tr>
-        <tr>
-            <td>Eyeliner</td>
-            <td>10%</td>
-        </tr>
-        </table></div>
-    <hr>    
-  <div class="footer-container">
-    <div class="footer-brand">
-      <h3 class="brand-name">Beauty Company</h3>
-      <p class="brand-desc">
-        Elevating everyday beauty with thoughtfully designed accessories.
-      </p>
-      <div class="social-icons">
-        <a href="instagram.com">Instagram</a>
-        <a href="tiktok.com">TikTok</a>
-        <a href="facebook.com">Facebook</a>
-      </div>
-    </div>
-<hr>
-  <div class="footer-bottom">
-    <p>Copyrights 2026 Beauty Company. All rights reserved.</p>
-    <p class="payments">Visa · MasterCard · PayPal · eSewa · Khalti</p>
-  </div>
+
+    <section class="container">
+        <h2>Welcome to Beauty Company</h2>
+        <p>
+            At Beauty Company, we believe that beauty is more than skin deep. Our mission is to empower individuals to
+            express their unique beauty through high-quality products and exceptional customer service. Whether you're
+            looking for the latest makeup trends or timeless skincare essentials, we've got you covered. Explore our
+            wide range of products and discover the perfect items to enhance your natural beauty.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>Copyrights 2026 Beauty Company. All rights reserved.</p>
+    </footer>
+
 </body>
+
 </html>
