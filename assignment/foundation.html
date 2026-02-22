@@ -1,40 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>foundation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foundations - Beauty Company</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body{
+    background: linear-gradient(180deg,#f9fbe7,#ffffff);
+}
+.header{
+    background: linear-gradient(135deg,#e8f5e9,#c8e6c9);
+    padding:20px;
+}
+.product-card:hover{
+    transform:translateY(-5px);
+}
+.btn-custom{
+    background:#2e7d32;
+    color:white;
+}
+.btn-custom:hover{
+    background:#1b5e20;
+}
+.product-card{
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    padding:15px;
+    transition:0.3s;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product-card img{
+    max-height:250px;  
+    width:auto;      
+    max-width:100%;   
+    display:block;
+    margin:auto;
+}
+
+</style>
 </head>
+
 <body>
-    <a href="index.html">Go Back</a>
-    <h1>Foundation</h1>
-    <p>Foundation is a skin-colored makeup applied to the face to create an even, uniform complexion, cover flaws, and enhance the overall appearance of the skin. It serves as a base for other makeup products, such as blush, bronzer, and highlighter. Foundations come in various forms, including liquid, powder, cream, and stick, and are available in a wide range of shades to match different skin tones.</p>
-    <h2>Types of Foundation</h2>
-    <ul>
-          <li>
-            <div>
-            <img alt="liquid foundation" src="https://img.drz.lazcdn.com/static/np/p/93a4e696c50ef4bd4c7a04ef1e909dd9.jpg_720x720q80.jpg" height="100px" width="100px">
-            <br>
-            <b>Liquid Foundation:</b> This type is versatile and works well for most skin types. It provides buildable coverage and can be found in various finishes, such as matte, dewy, and satin.
-            </div>
-        </li>
-        <li>
-            <div>
-                <img alt="powder foundation" src="https://www.bareminerals.com/cdn/shop/products/57978_7.jpg?v=1677780968&width=1024" height="100px" width="100px">
-                <br>
-                <b>Powder Foundation:</b> Ideal for oily skin, powder foundation offers a matte finish and helps control shine. It is easy to apply and can be used for touch-ups throughout the day.</li>
-                </div>
-        <li>
-            <div>
-                <img alt="cream foundation" src="https://static-01.daraz.com.np/p/69f8f1e00ac1918638c4c329eda31296.jpg" height="100px" width="100px">
-                <br>
-                <b>Cream Foundation:</b> Cream foundations are thicker and provide fuller coverage. They are suitable for dry or mature skin, as they offer hydration and a smooth finish.</li>
-                </div>
-        <li>
-            <div>
-                <img alt="stick foundation" src="https://m.media-amazon.com/images/I/71O-w4S4fML._SL1500_.jpg" height="100px" width="100px">
-                <br>
-                <b>Stick Foundation:</b> This type is convenient for on-the-go application. It provides medium to full coverage and is easy to blend.</li>
-                </div>
+
+<header class="header text-center">
+    <h2 class="text-success">Beauty Company</h2>
+    <p>Glow Everyday with Confidence ✨</p>
+</header>
+
+<div class="container my-5">
+<h3 class="text-center text-success mb-4">Our Best Foundations</h3>
+
+<div class="row g-4">
+
+<!-- Product 1 -->
+<div class="col-md-4">
+<div class="product-card text-center">
+<img src="https://colorpluscosmetics.com/wp-content/uploads/2023/06/ColorPlus-Cosmetics-LA-Girl-Pro-Coverage-Foundation-GLM642-Fair-1-scaled-300x300.jpg" class="img-fluid mb-3" alt="Hydra Moist Foundation">
+<h5>Glow Finish Foundation</h5>
+<p>Lightweight matte finish for daily wear.</p>
+<h6>Rs. 1,299</h6>
+<button class="btn btn-custom">Add to Cart</button>
+</div>
+</div>
+
+<!-- Product 2 -->
+<div class="col-md-4">
+<div class="product-card text-center">
+<img src="https://skincareshop.com.bd/wp-content/uploads/2022/04/M.A.C-Studio-Fix-Fluid-SPF-15-Foundation-NC-35-30ml-5.jpg" class="img-fluid mb-3" alt="Hydra Moist Foundation">
+<h5>Hydra Moist Foundation</h5>
+<p>Best for dry skin with dewy glow.</p>
+<h6>Rs. 1,499</h6>
+<button class="btn btn-custom">Add to Cart</button>
+</div>
+</div>
+
+<!-- Product 3 -->
+<div class="col-md-4">
+<div class="product-card text-center">
+<img src="https://wwd.com/wp-content/uploads/2024/09/best-walmart-foundations-elf-halo-glow.jpg?w=1000" class="img-fluid mb-3" alt="Hydra Moist Foundation">
+<h5>Full Coverage Pro</h5>
+<p>Long-lasting coverage for events.</p>
+<h6>Rs. 1,799</h6>
+<button class="btn btn-custom">Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+<div class="text-center mt-5">
+<a href="index.html" class="btn btn-outline-success">⬅ Back to Home</a>
+</div>
+
+</div>
+
+<footer class="text-center p-3 bg-light text-success">
+© 2026 Beauty Company
+</footer>
+
 </body>
 </html>
